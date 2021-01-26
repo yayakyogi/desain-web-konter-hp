@@ -348,7 +348,7 @@ body{
 .form-control:hover{
     cursor: default;
 }
-.form-kontak{
+.form-footer{
     padding: 10px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.03);
@@ -390,7 +390,7 @@ body{
     display: none;
     animation: modalAnimasi 0.5s ease;
     animation-fill-mode: forwards;
-    z-index: 1;
+    z-index: 2;
 }
 .form-modal{
     animation: animasi 0.5s ease;
@@ -447,14 +447,7 @@ body{
 .card p:nth-child(2){
     margin-top: 150px;
 }
-@keyframes animasi{
-    from{transform: scale(0);}
-    to{transform: scale(1);}
-}
-@keyframes modalAnimasi{
-    from{background-color: rgba(0, 0, 0, 0.1);}
-    to{background-color: rgba(0, 0, 0, 0.95);}
-}
+
 /* RESPONSIVE TABLET */
 @media screen and (max-width:776px){
     /* NAVBAR */
@@ -537,18 +530,20 @@ body{
         padding: 8px 15px;
     }
     .login{
-        width: 30%;
+        width: 40%;
     }
     .container{
         max-width: 100%;
     }
     .form{
         margin-bottom: 200px;
+        max-width: 100%;
     }
     /* WRAP */
     .wrap{
-        height: 100vh;
+        height: auto;
         padding-top: 20px;
+        width: 100%;
     }
     .content-utama{
         flex-direction: column;
@@ -582,6 +577,17 @@ body{
         line-height: 20pt;
         margin-bottom: 20px;
     }
+    /* PRODUK */
+    .breadcrumb{
+        font-size: 10pt;
+        padding-left: 15px;
+    }
+    .produk-head h2{
+        font-size: 15pt;
+    }
+    .konten-img span{
+        font-size: 10pt;
+    }
     /* KOTAK */
     .kontak{
         padding: 0;
@@ -590,6 +596,11 @@ body{
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+    }
+
+    /* LOGIN */
+    .modal{
+        margin: 50px auto;
     }
 }
 
@@ -609,4 +620,12 @@ body{
 }
 @keyframes cursor {
     50% { border-color: transparent }
+}
+@keyframes animasi{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+@keyframes modalAnimasi{
+    from{background-color: rgba(0, 0, 0, 0.1);}
+    to{background-color: rgba(0, 0, 0, 0.95);}
 }

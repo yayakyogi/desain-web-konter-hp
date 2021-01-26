@@ -21,7 +21,7 @@
                 <p>Login</p>
             </div>
             <div class="form-body">
-                <form action="kontak.html" method="POST">
+                <form action="kontak.html" method="GET">
                     <input type="text" id="username" name="username" class="form-control" placeholder="Username"><br>
                     <input type="password" name="password" class="form-control" id="password" placeholder="Password"><br>
                     <input type="submit" class="btn-submit" value="Login">
@@ -63,14 +63,6 @@
     function closeModaltambah(){
         document.getElementById("modal-tambah").style.display="none";
     }
-    const username = document.getElementById('username');
-    const password = document.getElementById('password');
 
-    if(username!="" || password!=""){
-        return false;
-    }
-    else{
-        return true;
-    }
 </script>
 </html>

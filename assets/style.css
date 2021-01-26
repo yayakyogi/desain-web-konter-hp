@@ -542,12 +542,10 @@ body{
     /* WRAP */
     .wrap{
         height: 100vh;
-        padding-top: 20px;
         width: 100%;
     }
     .wrap-2{
         height: auto;
-        padding-top: 20px;
         width: 100%;
     }
     .content-utama{
